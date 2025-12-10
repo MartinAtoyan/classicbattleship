@@ -1,7 +1,5 @@
 # Classic Battleship Game
 
-A terminal-based implementation of the Classic Battleship game for 2 players (human vs AI bot).
-
 ## Game Overview
 
 - **Board Size:** 10×10 (coordinates A-J, 1-10)
