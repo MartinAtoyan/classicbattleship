@@ -99,7 +99,8 @@ def display_game_state(game_state: GameState, save_figure: bool = False):
     """Display both boards using matplotlib."""
     filename = None
     if save_figure:
-        filename = f'outputs/turn_{game_state.turn:03d}.png'
+        # filename = f'outputs/turn_{game_state.turn:03d}.png'
+        filename = f"outputs/game_image.png"
     
     display_boards(
         game_state.player_board,
