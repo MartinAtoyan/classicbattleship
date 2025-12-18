@@ -1,11 +1,8 @@
-"""Main entry point for Battleship game."""
-
 import os
-import sys
 from src.ship_input import get_player_ships
 from src.bot_generation import generate_bot_ships
 from src.gameplay import GameBoard, play_game
-from src.utils import save_ships_to_csv, load_ships_from_csv
+from src.utils import save_ships_to_csv
 
 
 def main():
@@ -22,7 +19,7 @@ def main():
     print("\n[PHASE 1] Setting up your ships...")
     player_ships = get_player_ships()
     save_ships_to_csv('data/player_ships.csv', player_ships)
-    print("✓ Player ships saved to data/player_ships.csv\n")
+    print("Player ships saved to data/player_ships.csv\n")
     
     # Bot ship generation
     print("[PHASE 2] Generating bot ships...")

@@ -1,5 +1,3 @@
-"""Player ship input and validation."""
-
 import sys
 from typing import List, Tuple
 from src.utils import (
