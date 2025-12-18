@@ -79,16 +79,16 @@ def get_player_ships() -> List[Tuple[Tuple[int, int], Tuple[int, int]]]:
                 validate_ship_placement(ships, final_check=False)
             
             ship_count += 1
-            print(f"✓ Ship {ship_count} placed (size {ship_size})")
+            print(f"Ship {ship_count} placed (size {ship_size})")
             
         except ValueError as e:
-            print(f"✗ Error: {e}")
-            print("  Try again.")
+            print(f"Error: {e}")
+            print("Try again.")
         except Exception as e:
-            print(f"✗ Unexpected error: {e}")
-            print("  Try again.")
+            print(f"Unexpected error: {e}")
+            print("Try again.")
     
-    print("\n✓ All ships placed successfully!")
+    print("\nAll ships placed successfully!")
     return ships
 
 

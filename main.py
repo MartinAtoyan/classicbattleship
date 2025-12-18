@@ -28,7 +28,7 @@ def main():
     print("[PHASE 2] Generating bot ships...")
     bot_ships = generate_bot_ships()
     save_ships_to_csv('data/bot_ships.csv', bot_ships)
-    print("✓ Bot ships generated and saved to data/bot_ships.csv\n")
+    print("Bot ships generated and saved to data/bot_ships.csv\n")
     
     # Create game boards
     print("[PHASE 3] Starting game...\n")
